@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+:root {
+  --primary-color: #fa574a;
+  --secondary-color: #ffffff;
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --dark-color: #333;
+  --menu-speed: 0.75s;
+  --klassy-style: "Parisienne", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+a {
+  color: #333;
+}
+li {
+  list-style: none;
+}
+/*header*/
+header {
+  width: 100%;
+  height: 100px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .head-left {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+header .container .head-left img {
+  margin: 0 100px;
+}
+header .container .head-right {
+  width: 100%;
+  height: 100%;
+}
+header .container .head-right ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+header .container .head-right ul a {
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+/*dropdown hova*/
+header .container .head-right .features {
+  position: relative;
+  margin-right: 10px;
+}
+header .container .head-right .features:hover .drop-down {
+  display: block;
+  z-index: 3;
+}
+/*dropdown*/
+header .container .head-right .features .drop-down {
+  position: absolute;
+  top: 20px;
+  display: none;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+header .container .head-right .features .drop-down ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+header .container .head-right .features .drop-down ul li {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-top: 1px solid white;
+}
+/*about-us*/
+.about-us {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+}
+.about-us .container {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.about-us .container .about-text {
+  background-color: white;
+  width: 600px;
+  margin: 100px;
+  height: auto;
+}
+.about-us .container .about-text .para-uno {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px 0;
+  color: var(--primary-color);
+}
+.about-us .container .about-text h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 30px 0;
+}
+.about-us .container .about-text .para-duo {
+  color: var(--dark-color);
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 30px 0;
+  font-family: "Roboto", sans-serif;
+}
+.about-us .container .about-text .para-trio {
+  color: var(--dark-color);
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 30px 0;
+}
+.about-us .container .about-text .about-trio {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .container .about-text .about-trio img {
+  margin: 10px;
+}
+.about-us .container .about-img {
+  margin-top: 100px;
+  margin-right: 100px;
+}
